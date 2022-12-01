@@ -8,7 +8,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: column;
   color: rgb(33, 33, 33);
-  background-color: blue;
   height: 100vh;
   display: flex;
 }
@@ -58,7 +57,12 @@ body {
   font-size: 2rem;
   color: white;
   text-align: center;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(54, 49, 49);
+}
+
+.color-name {
+  font-size: 2.4rem;
+  font-weight: bolder;
 }
 
 .flip-button {

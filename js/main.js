@@ -8,7 +8,7 @@ let defaultColor = colors[0];
 pageBody.style.backgroundColor = defaultColor;
 let defaultMode = modeSelector.value;
 let defaultColorValue = getCurrentColorValue(defaultMode);
-displayColorValue(defaultColor);
+displayColorValue(defaultColorValue);
 
 function flipColor() {
   let previousColorIndex = colors.indexOf(pageBody.style.backgroundColor);
@@ -33,6 +33,7 @@ function getCurrentColorValue(selectedMode) {
 
 function displayColorValue(colorValue) {
   colorValueContainer.textContent = colorValue;
+  colorValueContainer.style.color = colorValue;
 }
 
 flipButton.addEventListener("click", flipColor);
