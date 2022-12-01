@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  color: rgb(33, 33, 33);
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  padding: 0.8rem 0;
+  outline: none;
+  border: none;
+}
+
+.mode-text {
+  display: inline;
+}
+
+.mode-selector {
+  width: 6.25rem;
+  outline: none;
+  border: none;
+  z-index: 2;
+}
+
+.main-page {
+  align-self: center;
+  margin: auto 0;
+  width: 100%;
+}
+
+.banner-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.125rem;
+}
+
+.bg-banner {
+  padding: 1rem 0;
+  width: 100%;
+  font-weight: 500;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  background-color: rgb(33, 33, 33);
+}
+
+.flip-button {
+  padding: 0.625rem 2.25rem;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.flip-button:hover {
+  background-color: rgb(70, 70, 70);
+  color: aliceblue;
+}
