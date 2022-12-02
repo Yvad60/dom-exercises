@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+    Verdana, sans-serif;
+  height: 100vh;
+  background-color: azure;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-title {
+  font-size: 50px;
+  align-self: center;
+}
+
+.counter-value {
+  font-size: 64px;
+  align-self: center;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 30px;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 2px;
+  font-size: 18px;
+  background-color: rgb(226, 226, 226);
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+}
+
+.button:active {
+  background-color: rgb(50, 50, 50);
+  color: aliceblue;
+}
