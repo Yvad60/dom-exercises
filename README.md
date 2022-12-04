@@ -1,7 +1,8 @@
-## DOM Exercises
+## Review/quote
 
-Practice and playground for learning the DOM manipulation
+show reviews and quotes on button click
 
-1. [Color flipper](https://github.com/Yvad60/dom-exercises/tree/color-flipper)
-2. [Simple counter](https://github.com/Yvad60/dom-exercises/tree/simple-counter)
-
+### Features
+- Slide left: change to the previous review
+- slide right: change to the next review
+- Random review: show a random revi

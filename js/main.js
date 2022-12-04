@@ -1,9 +1,10 @@
 const userName = document.querySelector(".review-card__username");
 const userProffession = document.querySelector(".review-card__proffession");
 const reviewDescription = document.querySelector(".review-card__description");
+const userImage = document.querySelector(".review-card__image");
 const leftChevron = document.querySelector("#left-chevron");
 const rightChevron = document.querySelector("#right-chevron");
-const userImage = document.querySelector(".review-card__image");
+const supriseButton = document.querySelector(".review-card__btn");
 
 const data = [
   {
@@ -32,9 +33,10 @@ const data = [
 let currentIndex = 0;
 let lastIndex = data.length - 1;
 
-displayReview(data[0]);
+displayReview(currentIndex);
 
-function displayReview(review) {
+function displayReview(selectedIndex) {
+  let review = data[selectedIndex];
   userName.textContent = review.name;
   userProffession.textContent = review.proffession;
   userImage.src = review.imageSrc;
@@ -43,13 +45,19 @@ function displayReview(review) {
 
 function slideLeft() {
   currentIndex = data[currentIndex - 1] ? currentIndex - 1 : lastIndex;
-  displayReview(data[currentIndex]);
+  displayReview(currentIndex);
 }
 
 function slideRight() {
   currentIndex = data[currentIndex + 1] ? currentIndex + 1 : 0;
-  displayReview(data[currentIndex]);
+  displayReview(currentIndex);
+}
+
+function showRandom() {
+  currentIndex = Math.floor(Math.random() * data.length);
+  displayReview(currentIndex);
 }
 
 leftChevron.addEventListener("click", slideLeft);
 rightChevron.addEventListener("click", slideRight);
+supriseButton.addEventListener("click", showRandom);
