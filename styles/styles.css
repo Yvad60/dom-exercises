@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.display {
+  background-color: hsl(224, 36%, 15%);
+  text-align: right;
+  border-radius: 6px;
+  color: azure;
+  font-size: 40px;
+  max-width: 340px;
+  font-weight: 700;
+  padding: 22px 16px;
+  border: none;
+  font-family: "League Spartan", sans-serif;
+}
+
+.keys__section {
+  background-color: hsl(223, 31%, 20%);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  border-radius: 6px;
+}
+
+.two-column {
+  grid-column: span 2;
+}
+
+button {
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: hsl(45, 7%, 89%);
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(224, 28%, 35%);
+}
+
+button:active {
+  background-color: hsl(224, 36%, 15%);
+  color: hsl(45, 7%, 89%);
+  transform: scale(0.9);
+}
+
+.edit-input {
+  background-color: hsl(224, 28%, 35%);
+  color: hsl(45, 7%, 89%);
+  font-size: 18px;
+}
+
+.equals {
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(45, 7%, 89%);
+}

@@ -1,7 +1,9 @@
-## DOM Exercises
+## Lasson calculator
+a simple calculator that handles basic Math operations
 
-Practice and playground for learning the DOM manipulation
+### Features
+- Basic operations (addition, subtraction, multiplication, divison )
+- Operand edit by deleting the previous number
+- Operations reset
 
-1. [Color flipper](https://github.com/Yvad60/dom-exercises/tree/color-flipper)
-2. [Simple counter](https://github.com/Yvad60/dom-exercises/tree/simple-counter)
-3. [Review/quotes](https://github.com/Yvad60/dom-exercises/tree/review/qoutes)
+Project UI was inspired by a frontend Mentor challenge [found here](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
